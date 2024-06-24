@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Group;
 use Illuminate\Http\Request;
 
 class GroupController extends Controller
@@ -11,7 +12,10 @@ class GroupController extends Controller
      */
     public function index()
     {
-        //
+        $groups = Group::latest()->paginate(20);
+        return view('group.index',[
+            'groups' => $groups,
+        ]);
     }
 
     /**
@@ -33,9 +37,11 @@ class GroupController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Group $group)
     {
-        //
+        return view('group.show',[
+            'group' => $group,
+        ]);
     }
 
     /**

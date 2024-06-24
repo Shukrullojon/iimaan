@@ -12,4 +12,9 @@ class Group extends Model
     protected $table = 'groups';
 
     protected $guarded = [];
+
+    static $statuses = [
+        0 => 'Arxive ❌',
+        1 => 'Active ✅'
+    ];
 }

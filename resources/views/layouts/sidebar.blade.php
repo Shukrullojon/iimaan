@@ -14,7 +14,14 @@
                 <li class="nav-item">
                     <a href="{{ route('home') }}" class="nav-link {{ Request::is('home*') ? "active":'' }}">
                         <i class="fa fa-home"></i>
-                        <p>Главная</p>
+                        <p>Home</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('group.index') }}" class="nav-link {{ Request::is('group*') ? "active":'' }}">
+                        <i class="fa fa-layer-group"></i>
+                        <p>Group</p>
                     </a>
                 </li>
 

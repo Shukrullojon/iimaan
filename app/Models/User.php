@@ -28,7 +28,6 @@ class User extends Authenticatable
         'username',
         'step',
         'status',
-        'balance',
     ];
 
     /**
