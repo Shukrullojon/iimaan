@@ -3,7 +3,7 @@
     <a href="" class="brand-link">
         <img src="{{ asset("admin_lte_3.2.0/dist/img/AdminLTELogo.png") }}" alt="AdminLTE Logo"
              class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">FOOD ME</span>
+        <span class="brand-text font-weight-light">IIMAAN</span>
     </a>
 
     <!-- Sidebar -->

@@ -12,8 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('process start_game')->everyFiveSeconds();
-        $schedule->command('process gaming')->everyFiveSeconds();
+
     }
 
     /**

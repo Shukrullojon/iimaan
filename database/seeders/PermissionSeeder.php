@@ -39,6 +39,8 @@ class PermissionSeeder extends Seeder
             ['name' => 'user-edit'],
             ['name' => 'user-update'],
             ['name' => 'user-destroy'],
+
+
         ];
         foreach ($permissionList as $item => $value){
             Permission::create($value);
