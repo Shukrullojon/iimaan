@@ -28,7 +28,7 @@
             </tr>
             @foreach ($groups as $key => $group)
                 <tr>
-                    <td>{{ $group->id }}</td>
+                    <td>{{ $group->chat_id }}</td>
                     <td>{{ $group->title }}</td>
                     <td>{{ $group->username }}</td>
                     <td>{{ $group->type }}</td>
