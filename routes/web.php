@@ -11,5 +11,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', \App\Http\Controllers\RoleController::class);
     Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
     Route::resource('group', \App\Http\Controllers\GroupController::class);
+    Route::resource('info', \App\Http\Controllers\InfoController::class);
+    Route::resource('bot', \App\Http\Controllers\BotController::class);
 
 });

@@ -25,7 +25,21 @@
                     </a>
                 </li>
 
-                <li class="nav-item {{ (Request::is('roles*') or Request::is('permissions*')) ? 'menu-open' : '' }}">
+                <li class="nav-item">
+                    <a href="{{ route('info.index') }}" class="nav-link {{ Request::is('info*') ? "active":'' }}">
+                        <i class="fa fa-info"></i>
+                        <p>Info</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('bot.index') }}" class="nav-link {{ Request::is('bot*') ? "active":'' }}">
+                        <i class="fa fa-user"></i>
+                        <p>Bot User</p>
+                    </a>
+                </li>
+
+                {{--<li class="nav-item {{ (Request::is('roles*') or Request::is('permissions*')) ? 'menu-open' : '' }}">
                     <a href="#"
                        class="nav-link {{ (Request::is('roles*') or Request::is('permissions*')) ? 'active' : '' }}">
                         <i class="nav-icon fa fa-cog"></i>
@@ -56,7 +70,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>--}}
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

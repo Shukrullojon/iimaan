@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Info extends Model
+{
+    use HasFactory;
+
+    protected $table = 'infos';
+
+    protected $guarded = [];
+
+    static $t = [
+        1 => 'Message',
+        2 => 'Photo',
+        3 => 'Document',
+        4 => 'Video',
+    ];
+}
